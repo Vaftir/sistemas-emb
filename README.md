@@ -8,4 +8,4 @@
 
 Além disso, é importante ressaltar que NÃO existem dados para a pripriedade 3 (Edificio Pedro).
 
-Existem dados somente para os Edificios Mateus (dados somente nos dias 15/06 e 16/06), e João (dados somente nos dias 06/06 à 12/06).
+Existem dados somente para os Edificios Mateus que foram populaods arbitrariamente (dados somente nos dias 15/06 e 16/06), e João (dados somente nos dias 06/06 à 12/06).
