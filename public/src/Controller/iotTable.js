@@ -4,6 +4,8 @@ const fetch = require('node-fetch');
 const timestampRegex = /(?<date>[\d\-]*)T(?<stamp>[\d\:]*).(?<trash>[\d]*)Z/
 
 
+
+// Funçaõ assíncrona para peghar os dados do broker
 async function insertTable() {
     var db;
     var consumption;
@@ -12,20 +14,26 @@ async function insertTable() {
     var today = new Date();
     var endTime = new Date();
     var startTime = new Date();
-
+    
+    // pega o tempo final que seria a hora atual 
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = (today.getHours()) + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date + ' ' + time;
     endTime = dateTime;
 
+
+    // pega o tempo final que seria a hora atual - 2 horas
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = (today.getHours() - 2) + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date + ' ' + time;
     startTime = dateTime;
 
+
+   // url padronixada para retornar dados
     var key = "6615871e-6222-4e2e-9325-f02e611ff39f";
     var url = "https://api.tago.io/data?variable=valor1&start_date=" + startTime.toString() + "&end_date=" + endTime.toString();
 
+    // insere dados nas tabelas os dados necessarios
     function insertConsumption(timestamp, consumption, dateday) {
         openDb().then(db => {
             db.run('INSERT INTO consumption (dateday, timestamp, id_property, gasto) VALUES (?,?,?,?)', dateday, timestamp,1,consumption)
