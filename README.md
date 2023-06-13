@@ -36,7 +36,7 @@ Existem dados somente para os Edificios Mateus que foram populaods arbitrariamen
    - Integrar as chamadas de API para buscar os dados do consumo de água do servidor.
    - Realizar testes de interface para verificar se os dados são corretamente exibidos no site.
 
-5. Testes Integrados (10/05/2023 - 25/05/2023):
+5. Testes Integrados (10/05/2023 - 08/06/2023):
    - Realizar testes de integração entre o hardware, firmware, software e front-end.
    - Simular diferentes cenários de consumo de água e verificar se os dados são coletados, transmitidos, armazenados e exibidos corretamente.
    - Registrar e corrigir quaisquer erros ou falhas encontrados durante os testes.
@@ -68,6 +68,6 @@ Existem dados somente para os Edificios Mateus que foram populaods arbitrariamen
    - As chamadas de API para buscar os dados do consumo de água estão retornando os resultados esperados.
    - Os dados de consumo de água são exibidos corretamente no site, de acordo com as seleções do usuário.
 
-5. Testes Integrados(25/05/2023):
+5. Testes Integrados(08/06/2023):
    - O fluxo de dados entre o hardware, firmware, software e front-end está ocorrendo sem problemas.
    - Os diferentes cenários de consumo de água são simulados com sucesso e os dados são coletados, transmitidos, armazenados e exibidos corretamente.
